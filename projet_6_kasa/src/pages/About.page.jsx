@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
+import Header from '../components/Header.component';
 import AboutCard from '../components/AboutCard.component';
 
 export default function About() {
@@ -8,7 +9,8 @@ export default function About() {
             <Helmet>
                 <title>A propos</title>
             </Helmet>
-
+    
+            <Header />
             <div>
                 <AboutCard text='Fiabilité' />
                 <AboutCard text='Rescpect' />
