@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
 import Header from '../components/Header.component';
-import AboutCard from '../components/AboutCard.component';
+import DropDownCard from '../components/DropDownCard.component';
 
 export default function About() {
     return (
@@ -12,10 +12,10 @@ export default function About() {
     
             <Header />
             <div>
-                <AboutCard text='Fiabilité' />
-                <AboutCard text='Rescpect' />
-                <AboutCard text='Service' />
-                <AboutCard text='Sécurité' />
+                <DropDownCard text='Fiabilité' />
+                <DropDownCard text='Rescpect' />
+                <DropDownCard text='Service' />
+                <DropDownCard text='Sécurité' />
             </div>
         </>
     )
