@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import About from "./pages/About.page";
 import HomePage from "./pages/Home.page";
 import Housing from "./pages/Housing.page";
+import Error from "./components/Error.component";
 // import { useState } from "react";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <Route path='/' element={<HomePage />}/>
         <Route path='/about_us' element={<About />}/>
         <Route path='/housing' element={<Housing />}/>
-        <Route path='*' element={<Navigate to='/' replace={false} />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );
