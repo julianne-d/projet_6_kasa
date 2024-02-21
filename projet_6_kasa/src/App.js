@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-// import data from './housing.json';
+import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import data from './housing.json';
 import About from "./pages/About.page";
 import HomePage from "./pages/Home.page";
 import Housing from "./pages/Housing.page";
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route path='/about_us' element={<About />}/>
-        <Route path='/housing' element={<Housing />}/>
+        <Route path='/housing/:id' element={<Housing />}/>
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

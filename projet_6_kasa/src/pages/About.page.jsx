@@ -13,7 +13,7 @@ export default function About() {
             <Header />
             <div>
                 <DropDownCard text='Fiabilité' />
-                <DropDownCard text='Rescpect' />
+                <DropDownCard text='Respect' />
                 <DropDownCard text='Service' />
                 <DropDownCard text='Sécurité' />
             </div>

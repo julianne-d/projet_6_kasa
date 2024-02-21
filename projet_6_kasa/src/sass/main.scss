@@ -1,1 +1,5 @@
+// main.scss -> fichier référence pour importer les autres fichiers scss
 @import 'base';
+
+// Components
+@import 'components/card.component';
