@@ -8,8 +8,11 @@ $text-color: #fff;
     text-align: center;
     background-color: $background-color;
     color: $text-color;
-    font-size: 3.5rem;
     padding: 2rem;
+
+    .title {
+        font-size: 3.5rem;
+    }
 
     p {
         margin: 0;
