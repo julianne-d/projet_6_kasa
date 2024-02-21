@@ -1,0 +1,43 @@
+$text-color: #ff6060;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: $text-color;
+    margin: 0.75rem 0.75rem 0 0.75rem;
+
+    * {
+        margin: 0;
+    }
+
+    .title {
+        font-size: 4.5rem;
+        font-weight: 500;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        height: 6rem;
+        width: 11rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: 450;
+        color: black;
+        font-size: 0.9rem;
+
+        .link {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    Link {
+        text-decoration: none;
+    }
+}
+
+.header__logo {
+    fill: $text-color;
+}
