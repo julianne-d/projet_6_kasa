@@ -2,6 +2,7 @@ $main-color: #ff6060;
 
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat';
 }
 
 body {
@@ -21,4 +22,17 @@ code {
 .logo {
   height: 2rem;
   width: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    text-decoration: underline;
+
+  &:visited {
+    color:black
+  }
+  }
 }
