@@ -1,0 +1,19 @@
+$main-color: #ff6060;
+$secondary-color: #E3E3E3;
+
+.stars-container {
+    display: flex;
+    gap: 0.15rem;
+
+    .star {
+        height: 1rem;
+
+        &--filled {
+            fill: $main-color;
+        }
+
+        &--empty {
+            fill: $secondary-color;
+        }
+    }
+}
