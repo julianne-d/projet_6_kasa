@@ -1,15 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types'; 
 import { Link } from 'react-router-dom';
-export default function HousingCard({ house }) {
 
+import '../sass/components/_housingCard.component.scss';
+export default function HousingCard({ house }) {
   return (
-    <div className='housing-card' >
-        <Link to={`/housing/${house.id}`}>
-        <img src={house.cover} alt={house.title} />
+    <Link className='link' to={`/housing/${house.id}`}>
+      <div className='housing-card'  
+        style={{ 
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(${house.cover})`
+        }}>
         <h2>{house.title}</h2>
-        <p>{house.description}</p>
-      </Link>
     </div>
+    </Link>
   )
 }
 
