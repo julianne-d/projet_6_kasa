@@ -12,6 +12,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+
+.main-container {
+  margin: auto;
+  max-width: 1300px;
 }
 
 code {
@@ -28,16 +34,12 @@ code {
   text-decoration: none;
   color: black;
 
-  &:hover {
-    text-decoration: underline;
-  }
-
   &:visited {
     color:black;
   }
 }
 
-.header, .banner {
+.header, .banner, .cards-container {
   @media (max-width: 500px) {
     margin: 0.75rem 1rem 0 1rem;
   }
