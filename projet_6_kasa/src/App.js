@@ -1,10 +1,9 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import data from './housing.json';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import About from "./pages/About.page";
 import HomePage from "./pages/Home.page";
 import Housing from "./pages/Housing.page";
-import Error from "./components/Error.component";
+import Error from "./pages/Error.page";
 // import { useState } from "react";
 
 function App() {
@@ -14,7 +13,8 @@ function App() {
         <Route path='/' element={<HomePage />}/>
         <Route path='/about' element={<About />}/>
         <Route path='/housing/:id' element={<Housing />}/>
-        <Route path="*" element={<Error />} />
+        <Route path='/*' element={<Navigate to="/404" />} />
+        <Route path='/404' element={<Error />} />
       </Routes>
     </BrowserRouter>
   );
