@@ -20,14 +20,14 @@ $text-color: #fff;
     font-weight: 700;
     
     @media (max-width: 500px) {
-        width: 95%;
+        width: 92%;
         height: 7rem;
         border-radius: 0.75rem;
         padding-left: 1rem;
         font-size: 1.5rem;
     }
 
-    @media (min-width: 601px) {
+    @media (min-width: 501px) {
         width: 90%;
         height: 14rem;
         border-radius: 1.5rem;
