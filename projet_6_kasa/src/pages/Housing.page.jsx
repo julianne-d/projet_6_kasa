@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from "react-helmet";
 import { useParams, useNavigate } from 'react-router-dom';
+
 import Header from '../components/Header.component';
+import Footer from '../components/Footer.component';
+import HousingTag from '../components/HousingTag.component';
+import Slideshow from '../components/Slideshow.component';
+import StarRating from '../components/StarRating.component';
+
 import Collapse from '../components/Collapse.component';
+import List from '../components/List.component';
+
 import data from '../housing.json';
 
 export default function Housing() {
@@ -48,17 +56,30 @@ export default function Housing() {
     if (Object.keys(housingData).length <= 0) return null;
 
     return (
-        <>
+        <div className='housing-page'>
             <Helmet>
-                <title>A propos</title>
+                <title>{housingData.title}</title>
             </Helmet>
 
             <Header />
-            <div>
-                <p>{housingData.title}</p>
-                <Collapse text='Description' />
-                <Collapse text='Équipement' />
+            <div className='housing-body'>
+                <Slideshow images={[...housingData.pictures]} />
+                <h1 className='title'>{housingData.title}</h1>
+                <p className='location'>{housingData.location}</p>
+                <HousingTag tags={housingData.tags} />
+
+                <div className='housing-infos'>
+                    <StarRating rating={parseFloat(housingData.rating)} />
+                    <div className='host-infos'>
+                        <p>{housingData.host.name}</p>
+                        <img className="host-infos__pp" src={housingData.host.picture} alt="profile picture of the host" />
+                    </div>
+                </div>
+
+                <Collapse className="housing-body__collapse" buttonName='Description' text={housingData.description}/>
+                <Collapse className="housing-body__collapse" buttonName='Équipement' text={<List items={housingData.equipments} />} /> 
             </div>
-        </>
+            <Footer />
+        </div>
     )
 }

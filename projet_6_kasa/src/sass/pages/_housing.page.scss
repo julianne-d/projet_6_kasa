@@ -1,0 +1,40 @@
+$main-color: #ff6060;
+
+.housing-body {
+    margin: 0 1rem 0 1rem;
+
+    .title {
+        margin-bottom: 0.5rem;
+
+        color: $main-color;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .location {
+        margin-bottom: 0.75rem;
+    }
+
+    .housing-infos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .host-infos {
+        display: flex;
+        gap: 0.5rem;
+        color: $main-color;
+
+        &__pp {
+            border-radius: 100px;
+            height: 3rem;
+        }
+    }
+
+    .collapse-menu {
+        margin-bottom: 1rem;
+    }
+}
