@@ -2,27 +2,29 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 import Header from '../components/Header.component';
 import Footer from '../components/Footer.component';
+import Banner from '../components/Banner.component';
 import Collapse from '../components/Collapse.component';
 
 export default function About() {
     return (
-        <>
+        <div className='about-page'>
             <Helmet>
                 <title>A propos</title>
             </Helmet>
     
             <Header />
+            <Banner />
             <div>
-                <Collapse classname='btn btn__collapse' buttonName='Fiabilité'
+                <Collapse buttonName='Fiabilité'
                     text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ante non turpis tristique pharetra. Praesent imperdiet ipsum non mattis aliquet.' />
-                <Collapse classname='btn btn__collapse' buttonName='Respect' 
+                <Collapse buttonName='Respect' 
                     text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ante non turpis tristique pharetra. Praesent imperdiet ipsum non mattis aliquet.' />
-                <Collapse classname='btn btn__collapse' buttonName='Service' 
+                <Collapse buttonName='Service' 
                     text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ante non turpis tristique pharetra. Praesent imperdiet ipsum non mattis aliquet.' />
-                <Collapse classname='btn btn__collapse' buttonName='Sécurité' 
+                <Collapse buttonName='Sécurité' 
                     text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ante non turpis tristique pharetra. Praesent imperdiet ipsum non mattis aliquet.' />
             </div>
             <Footer />
-        </>
+        </div>
     )
 }

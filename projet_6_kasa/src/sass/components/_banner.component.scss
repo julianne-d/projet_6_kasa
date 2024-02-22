@@ -38,3 +38,14 @@ $text-color: #fff;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
     }
 }
+
+.about-page .banner {
+    background-image: 
+    url('../../assets/images/about_banner.png');
+    background-color: rgba(0, 0, 0, 0.25);
+    background-blend-mode: multiply;
+
+    &__p {
+        display: none;
+    }
+}
