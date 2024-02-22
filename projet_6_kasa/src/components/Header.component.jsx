@@ -12,8 +12,8 @@ export default function Header() {
         sa
       </p>
       <nav>
-          <Link className='link' to='/'>Accueil</Link>
-          <Link className='link' to='/about'>A Propos</Link>
+          <Link className='link nav__home' to='/'>Accueil</Link>
+          <Link className='link nav__about' to='/about'>A Propos</Link>
       </nav>
     </div>
   )
