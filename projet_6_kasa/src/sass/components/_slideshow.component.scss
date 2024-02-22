@@ -1,0 +1,22 @@
+.slideshow {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+
+    height: 18rem;
+    width: 24rem;
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+    .slideshow__button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .slideshow__button--svg {
+        fill: white;
+        height: 1.75em;
+    }
+}
