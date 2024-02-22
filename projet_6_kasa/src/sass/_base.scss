@@ -39,7 +39,7 @@ code {
   }
 }
 
-.header, .banner, .cards-container {
+.header, .banner, .cards-container, .collapse-container {
   @media (max-width: 500px) {
     margin: 0.75rem 1rem 0 1rem;
   }
@@ -53,4 +53,17 @@ code {
   .hidden-on-desktop {
     display: none;
   }
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  height: 2rem;;
+  background-color: $main-color;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
 }

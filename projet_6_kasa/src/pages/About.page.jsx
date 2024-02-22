@@ -14,7 +14,7 @@ export default function About() {
     
             <Header />
             <Banner />
-            <div>
+            <div className='collapse-container'>
                 <Collapse buttonName='Fiabilité'
                     text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ante non turpis tristique pharetra. Praesent imperdiet ipsum non mattis aliquet.' />
                 <Collapse buttonName='Respect' 

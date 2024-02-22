@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export default function Collapse({ buttonName, text }) {  
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -8,9 +9,10 @@ export default function Collapse({ buttonName, text }) {
   };
 
   return (
-    <div>
-      <button onClick={toggleCollapse}>
-        {buttonName}
+    <div className='collapse-menu'>
+      <button className='btn' onClick={toggleCollapse}>
+        <span>{buttonName}</span>
+        <span>{isCollapsed ? '▼' : '▲'}</span>
       </button>
       {!isCollapsed && (
         <div>
