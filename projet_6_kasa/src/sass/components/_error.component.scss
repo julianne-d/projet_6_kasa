@@ -1,0 +1,41 @@
+$main-color: #ff6060;
+
+.error-404-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $main-color;
+    height: 70vh;
+
+    .error-404-container__h1 {
+        font-size: 6rem;
+
+        @media (min-width: 501px) {
+            margin: 0;
+            font-size: 12rem;
+        }
+    }
+
+    .error-404-container__text {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+
+        text-align: center;
+        font-weight: 500;
+
+        @media (min-width: 501px) {
+            margin-top: 6vh;
+            font-size: 1.5rem;
+        }
+    }
+
+    .error-404-container__link {
+        text-decoration: underline;
+        margin-bottom: 8vh;
+
+        @media (min-width: 501px) {
+            margin-bottom: 6vh;
+        }
+    }
+}

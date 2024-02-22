@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import About from "./pages/About.page";
 import HomePage from "./pages/Home.page";
 import Housing from "./pages/Housing.page";
-import Error from "./pages/Error.page";
+import Error from "./components/Error.component";
 // import { useState } from "react";
 
 function App() {
