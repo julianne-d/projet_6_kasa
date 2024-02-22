@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from "react-helmet";
 import { useParams, useNavigate } from 'react-router-dom';
 import Header from '../components/Header.component';
-import DropDownCard from '../components/DropDownCard.component';
+import Collapse from '../components/Collapse.component';
 import data from '../housing.json';
 
 export default function Housing() {
@@ -56,8 +56,8 @@ export default function Housing() {
             <Header />
             <div>
                 <p>{housingData.title}</p>
-                <DropDownCard text='Description' />
-                <DropDownCard text='Équipement' />
+                <Collapse text='Description' />
+                <Collapse text='Équipement' />
             </div>
         </>
     )

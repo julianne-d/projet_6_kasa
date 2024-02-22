@@ -13,7 +13,7 @@ export default function Header() {
       </p>
       <nav>
           <Link className='link' to='/'>Accueil</Link>
-          <Link className='link' to='/about_us'>A Propos</Link>
+          <Link className='link' to='/about'>A Propos</Link>
       </nav>
     </div>
   )
