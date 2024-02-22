@@ -19,7 +19,14 @@ $collapse-background-color: #f6f6f6;
     align-items: center;
     width: 100%;
 
-    .btn, div {
+    .collapse-arrow {
+        fill: white;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+        width: 1.25rem;
+    }
+
+    .btn, .collapse-menu__text {
         width: 100%; 
 
         @media (min-width: 501px) {
@@ -31,10 +38,11 @@ $collapse-background-color: #f6f6f6;
         height: 2.5rem;
     }
 
-    div {
+    .collapse-menu__text {
         background-color: $collapse-background-color; 
         border-radius: 5px;
-        padding: 0.5rem;
+        padding: 0.75rem;
+        margin-top: 0;
 
         @media (min-width: 501px) {
             margin-bottom: 2rem;
