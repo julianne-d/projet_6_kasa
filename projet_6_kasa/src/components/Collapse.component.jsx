@@ -34,5 +34,8 @@ export default function Collapse({ buttonName, text }) {
 /** PROPTYPES **/
 Collapse.propTypes = {
   buttonName: PropTypes.string.isRequired, 
-  text: PropTypes.string.isRequired,
+  text: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string)
+  ]).isRequired,
 };
