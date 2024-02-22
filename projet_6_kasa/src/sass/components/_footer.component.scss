@@ -12,6 +12,10 @@ $text-color: #fff;
 
     .title {
         font-size: 3.5rem;
+
+        @media (min-width: 501px) {
+            margin-bottom: 2rem;
+        }
     }
 
     p {
