@@ -63,7 +63,9 @@ export default function Housing() {
 
             <Header />
             <div className='housing-body'>
-                <Slideshow images={[...housingData.pictures]} />
+                <div className='slideshow-container'>
+                    <Slideshow images={[...housingData.pictures]} />
+                </div>
                 <h1 className='title'>{housingData.title}</h1>
                 <p className='location'>{housingData.location}</p>
                 <HousingTag tags={housingData.tags} />
