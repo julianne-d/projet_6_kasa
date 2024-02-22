@@ -48,3 +48,15 @@ $text-color: #ff6060;
 .header__logo {
     fill: $text-color;
 }
+
+.homepage {
+    .nav__home {
+        text-decoration: underline;
+    }
+}
+
+.about-page {
+    .nav__about {
+        text-decoration: underline;
+    }
+}
