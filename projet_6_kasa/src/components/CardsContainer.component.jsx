@@ -1,11 +1,14 @@
-import React from 'react'
-import HousingCard from './HousingCard.component'
+import React from 'react';
+import HousingCard from './HousingCard.component';
+import data from '../housing.json'; 
 
 export default function CardsContainer() {
 
   return (
     <div className='cards-container'>
-      <HousingCard />
+      {data.map(house => (
+        <HousingCard key={house.id} house={house} />
+      ))}
     </div>
   )
 }
