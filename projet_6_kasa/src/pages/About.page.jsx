@@ -8,7 +8,7 @@ import Collapse from '../components/Collapse.component';
 export default function About() {
     return (
         <>
-        <div className='about-page'>
+        <div className='about-page page'>
             <Helmet>
                 <title>A propos</title>
             </Helmet>

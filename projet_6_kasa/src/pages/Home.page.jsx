@@ -7,15 +7,18 @@ import Footer from '../components/Footer.component';
 
 export default function HomePage() {
   return (
-    <div className='homepage'>
-      <Helmet>
-        <title>Accueil</title>
-      </Helmet>
+    <>
+      <div className='homepage page'>
+        <Helmet>
+          <title>Accueil</title>
+        </Helmet>
 
-      <Header />
-      <Banner />
-      <CardsContainer />
+        <Header />
+        <Banner />
+        <CardsContainer />
+
+      </div>
       <Footer />
-    </div>
+    </>
   )
 }
