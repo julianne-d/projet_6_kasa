@@ -55,39 +55,41 @@ export default function Housing() {
     if (Object.keys(housingData).length <= 0) return null;
 
     return (
-        <div className='housing-page'>
-            <Helmet>
-                <title>{housingData.title}</title>
-            </Helmet>
+        <>
+            <div className='housing-page page'>
+                <Helmet>
+                    <title>{housingData.title}</title>
+                </Helmet>
 
-            <Header />
-            <div className='housing-body'>
-                <div className='slideshow-container'>
-                    <Slideshow images={[...housingData.pictures]} />
-                </div>
-
-                <div className='housing-infos'>
-                    <div className='title-and-tags'>
-                        <h1 className='title'>{housingData.title}</h1>
-                        <p className='location'>{housingData.location}</p>
-                        <HousingTag tags={housingData.tags} />
+                <Header />
+                <div className='housing-body'>
+                    <div className='slideshow-container'>
+                        <Slideshow images={[...housingData.pictures]} />
                     </div>
 
-                    <div className='host-and-rating'>
-                        <StarRating rating={parseFloat(housingData.rating)} />
-                        <div className='host-infos'>
-                            <p>{housingData.host.name}</p>
-                            <img className="host-infos__pp" src={housingData.host.picture} alt="profile picture of the host" />
+                    <div className='housing-infos'>
+                        <div className='title-and-tags'>
+                            <h1 className='title'>{housingData.title}</h1>
+                            <p className='location'>{housingData.location}</p>
+                            <HousingTag tags={housingData.tags} />
+                        </div>
+
+                        <div className='host-and-rating'>
+                            <StarRating rating={parseFloat(housingData.rating)} />
+                            <div className='host-infos'>
+                                <p>{housingData.host.name}</p>
+                                <img className="host-infos__pp" src={housingData.host.picture} alt="profile picture of the host" />
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className='housing-body__collapses-container'>
-                    <Collapse className="housing-body__collapse" buttonName='Description' text={housingData.description} />
-                    <Collapse className="housing-body__collapse" buttonName='Équipement' list={housingData.equipments} />
+                    <div className='housing-body__collapses-container'>
+                        <Collapse className="housing-body__collapse" buttonName='Description' text={housingData.description} />
+                        <Collapse className="housing-body__collapse" buttonName='Équipement' list={housingData.equipments} />
+                    </div>
                 </div>
             </div>
             <Footer />
-        </div>
+        </>
     )
 }

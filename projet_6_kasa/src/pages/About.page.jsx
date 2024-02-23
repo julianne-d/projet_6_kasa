@@ -7,7 +7,8 @@ import Collapse from '../components/Collapse.component';
 
 export default function About() {
     return (
-        <div className='about-page'>
+        <>
+        <div className='about-page page'>
             <Helmet>
                 <title>A propos</title>
             </Helmet>
@@ -24,7 +25,8 @@ export default function About() {
                 <Collapse buttonName='Sécurité' 
                     text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ante non turpis tristique pharetra. Praesent imperdiet ipsum non mattis aliquet.' />
             </div>
-            <Footer />
         </div>
+        <Footer />
+        </>
     )
 }

@@ -12,11 +12,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
-.main-container {
-  margin: auto;
+.page {
+  margin:auto;
   max-width: 1300px;
 }
 
@@ -65,6 +64,6 @@ code {
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }

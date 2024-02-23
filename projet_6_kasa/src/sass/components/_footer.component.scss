@@ -6,10 +6,19 @@ $text-color: #fff;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: 20vh;
+
     background-color: $background-color;
     color: $text-color;
+
     padding: 2rem;
     padding-top: 3rem;
+
+    margin-top: 3rem;
+
+    @media screen and (max-width: 500px) {
+        margin-top: 1rem; 
+    }
 
     .title {
         font-size: 3.5rem;
@@ -31,9 +40,4 @@ $text-color: #fff;
         }
     }
 }
-
-.footer__logo {
-    fill: $text-color;
-}
-
 
