@@ -1,10 +1,17 @@
 .slideshow {
     display: flex;
     justify-content: space-between;
-    margin-right: 1rem;
 
-    height: 18rem;
-    width: 24rem;
+    @media (max-width: 500px) {
+        height: 18rem;
+        width: 24rem;
+    }
+      
+    @media (min-width: 501px) {
+        margin: 0 1rem 0 1rem;
+        height: 18rem;
+        width: 73rem;
+    }
 
     background-size: cover;
     background-position: center;
