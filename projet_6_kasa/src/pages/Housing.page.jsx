@@ -77,7 +77,7 @@ export default function Housing() {
                         <div className='host-and-rating'>
                             <StarRating rating={parseFloat(housingData.rating)} />
                             <div className='host-infos'>
-                                <p>{housingData.host.name}</p>
+                                <p className='host-infos__name'>{housingData.host.name}</p>
                                 <img className="host-infos__pp" src={housingData.host.picture} alt="profile picture of the host" />
                             </div>
                         </div>

@@ -10,21 +10,19 @@ $collapse-background-color: #f6f6f6;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
     }
-    min-height: 80vh;
 }
 
 .collapse-menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     width: 100%;
 
     overflow: hidden;
     position: relative;
 
     @media screen and (min-width: 501px) {
-        width: 85%;
+        width: 46%;
     }
 
     .collapse-arrow {
@@ -57,8 +55,8 @@ $collapse-background-color: #f6f6f6;
         // top: 100%;
         // transform: translateY(-100%);
         max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out; 
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out; 
 
         // transition: transform 0.3s ease-in-out;
         &--expanded {

@@ -17,6 +17,7 @@ body {
 .page {
   margin:auto;
   max-width: 1300px;
+  min-height: 80vh;
 }
 
 code {
@@ -30,16 +31,6 @@ code {
 
   &:visited {
     color:black;
-  }
-}
-
-.header, .banner, .cards-container, .collapse-container {
-  @media (max-width: 500px) {
-    margin: 0.75rem 1rem 0 1rem;
-  }
-  
-  @media (min-width: 501px) {
-    margin: 0.75rem 5rem 0 5rem;
   }
 }
 
