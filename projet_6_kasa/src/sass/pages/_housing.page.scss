@@ -3,6 +3,12 @@ $main-color: #ff6060;
 .housing-body {
     margin: 0 1rem 0 1rem;
 
+    .housing-infos {
+        @media (min-width: 501px) {
+            display: flex;
+        }
+    }
+
     .slideshow-container {
         display: flex;
         flex-direction: column;
@@ -21,7 +27,7 @@ $main-color: #ff6060;
         margin-bottom: 0.75rem;
     }
 
-    .housing-infos {
+    .host-and-rating {
         display: flex;
         justify-content: space-between;
         align-items: center;

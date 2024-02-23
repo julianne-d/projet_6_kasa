@@ -9,7 +9,6 @@ import Slideshow from '../components/Slideshow.component';
 import StarRating from '../components/StarRating.component';
 
 import Collapse from '../components/Collapse.component';
-import List from '../components/List.component';
 
 import data from '../housing.json';
 
@@ -66,20 +65,27 @@ export default function Housing() {
                 <div className='slideshow-container'>
                     <Slideshow images={[...housingData.pictures]} />
                 </div>
-                <h1 className='title'>{housingData.title}</h1>
-                <p className='location'>{housingData.location}</p>
-                <HousingTag tags={housingData.tags} />
 
                 <div className='housing-infos'>
-                    <StarRating rating={parseFloat(housingData.rating)} />
-                    <div className='host-infos'>
-                        <p>{housingData.host.name}</p>
-                        <img className="host-infos__pp" src={housingData.host.picture} alt="profile picture of the host" />
+                    <div className='title-and-tags'>
+                        <h1 className='title'>{housingData.title}</h1>
+                        <p className='location'>{housingData.location}</p>
+                        <HousingTag tags={housingData.tags} />
+                    </div>
+
+                    <div className='host-and-rating'>
+                        <StarRating rating={parseFloat(housingData.rating)} />
+                        <div className='host-infos'>
+                            <p>{housingData.host.name}</p>
+                            <img className="host-infos__pp" src={housingData.host.picture} alt="profile picture of the host" />
+                        </div>
                     </div>
                 </div>
 
-                <Collapse className="housing-body__collapse" buttonName='Description' text={housingData.description}/>
-                <Collapse className="housing-body__collapse" buttonName='Équipement' text={<List items={housingData.equipments} />} /> 
+                <div className='housing-body__collapses-container'>
+                    <Collapse className="housing-body__collapse" buttonName='Description' text={housingData.description} />
+                    <Collapse className="housing-body__collapse" buttonName='Équipement' list={housingData.equipments} />
+                </div>
             </div>
             <Footer />
         </div>
