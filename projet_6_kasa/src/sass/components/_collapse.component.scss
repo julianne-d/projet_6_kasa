@@ -6,8 +6,8 @@ $collapse-background-color: #f6f6f6;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
-        margin-top: 1.5rem;
+        gap: 1.5rem;
+        margin-top: 2rem;
         margin-bottom: 1.5rem;
     }
 }
@@ -22,14 +22,14 @@ $collapse-background-color: #f6f6f6;
     position: relative;
 
     @media screen and (min-width: 501px) {
-        width: 46%;
+        width: 80%;
     }
 
     .collapse-arrow {
         fill: white;
         // margin-right: 0.5rem;
         // margin-top: 0.5rem;
-        width: 1.25rem;
+        width: 1.5rem;
         transition: transform 0.15s ease-in-out;
         &.invert-arrow {
             transform: rotate(180deg);
@@ -45,7 +45,7 @@ $collapse-background-color: #f6f6f6;
         padding: 1.25rem;
         padding-left: 15px;
         cursor: pointer;
-        z-index: 1;
+        font-size: 1.5rem;
     }
 
     .collapse-content {
