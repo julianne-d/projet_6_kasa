@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import List from '../components/List.component';
+import List from '../List/List.component';
 
 export default function Collapse({ buttonName, text, list }) {
   const [isCollapsed, setIsCollapsed] = useState(true);

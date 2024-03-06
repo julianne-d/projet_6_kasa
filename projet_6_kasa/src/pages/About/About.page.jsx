@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../components/Header.component';
-import Footer from '../components/Footer.component';
-import Banner from '../components/Banner.component';
-import Collapse from '../components/Collapse.component';
+import Header from '../../components/Header/Header.component';
+import Footer from '../../components/Footer/Footer.component';
+import Banner from '../../components/Banner/Banner.component';
+import Collapse from '../../components/Collapse/Collapse.component';
 
 export default function About() {
     return (

@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
-import Header from '../components/Header.component';
-import Footer from '../components/Footer.component';
-import HousingTag from '../components/HousingTag.component';
-import Slideshow from '../components/Slideshow.component';
-import StarRating from '../components/StarRating.component';
+import Header from '../../components/Header/Header.component';
+import Footer from '../../components/Footer/Footer.component';
+import HousingTag from '../../components/HousingTag/HousingTag.component';
+import Slideshow from '../../components/SlideShow/Slideshow.component';
+import StarRating from '../../components/StarRating/StarRating.component';
 
-import Collapse from '../components/Collapse.component';
+import Collapse from '../../components/Collapse/Collapse.component';
 
-import data from '../housing.json';
+import data from '../../housing.json';
 
 export default function Housing() {
     // Création du state pour stocker les données de l'annonce (tableau vide par défaut)

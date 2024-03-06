@@ -2,17 +2,17 @@
 @import 'base';
 
 // Pages
-@import 'pages/housing.page';
+@import '../pages/Housing/housing.page';
 
 // Components
-@import 'components/header.component';
-@import 'components/footer.component';
-@import 'components/banner.component';
-@import 'components/collapse.component';
-@import 'components/slideshow.component';
-@import 'components/list.component';
-@import 'components/cardsContainer.component';
-@import 'components/housingCard.component';
-@import 'components/housingTag.component';
-@import 'components/starRating.component';
-@import 'components/error.component';
+@import '../components/Header/header.component';
+@import '../components/Footer/footer.component';
+@import '../components/Banner/banner.component';
+@import '../components/Collapse/collapse.component';
+@import '../components/SlideShow/slideshow.component';
+@import '../components/List/list.component';
+@import '../components/CardsContainer/cardsContainer.component';
+@import '../components/HousingCard/housingCard.component';
+@import '../components/HousingTag/housingTag.component';
+@import '../components/StarRating/starRating.component';
+@import '../components/Error/error.component';

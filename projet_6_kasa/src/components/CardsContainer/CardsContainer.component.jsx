@@ -1,6 +1,6 @@
 import React from 'react';
-import HousingCard from './HousingCard.component';
-import data from '../housing.json'; 
+import HousingCard from '../HousingCard/HousingCard.component';
+import data from '../../housing.json'; 
 
 export default function CardsContainer() {
 

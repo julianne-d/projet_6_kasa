@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../components/Header.component';
-import Footer from '../components/Footer.component';
+import Header from '../Header/Header.component';
+import Footer from '../Footer/Footer.component';
 
 export default function Error() {
     return (
