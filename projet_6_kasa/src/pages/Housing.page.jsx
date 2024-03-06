@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from "react-helmet-async";
 import { useParams, useNavigate } from 'react-router-dom';
 
 import Header from '../components/Header.component';
@@ -57,9 +56,6 @@ export default function Housing() {
     return (
         <>
             <div className='housing-page page'>
-                <Helmet>
-                    <title>{housingData.title}</title>
-                </Helmet>
 
                 <Header />
                 <div className='housing-body'>

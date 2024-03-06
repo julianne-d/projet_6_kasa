@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from "react-helmet-async";
 import Header from '../components/Header.component';
 import Footer from '../components/Footer.component';
 import Banner from '../components/Banner.component';
@@ -9,10 +8,6 @@ export default function About() {
     return (
         <>
         <div className='about-page page'>
-            <Helmet>
-                <title>A propos</title>
-            </Helmet>
-    
             <Header />
             <Banner />
             <div className='collapse-container'>
