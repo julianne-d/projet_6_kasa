@@ -19,11 +19,11 @@ export default function About() {
                 <Collapse buttonName='Fiabilité'
                     text='Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformesux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.' />
                 <Collapse buttonName='Respect' 
-                    text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ante non turpis tristique pharetra. Praesent imperdiet ipsum non mattis aliquet.' />
+                    text='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbationdu voisinage entraînera une exclusion de nos plateformes.' />
                 <Collapse buttonName='Service' 
-                    text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ante non turpis tristique pharetra. Praesent imperdiet ipsum non mattis aliquet.' />
+                    text='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbationdu voisinage entraînera une exclusion de nos plateformes.' />
                 <Collapse buttonName='Sécurité' 
-                    text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ante non turpis tristique pharetra. Praesent imperdiet ipsum non mattis aliquet.' />
+                    text='La sécurité est la priorité de Kasa. Aussi bien pour nos h^tes que pour nos voyageurs. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ante non turpis tristique pharetra. Praesent imperdiet ipsum non mattis aliquet.' />
             </div>
         </div>
         <Footer />
