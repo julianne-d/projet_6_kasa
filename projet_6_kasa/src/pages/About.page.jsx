@@ -17,7 +17,7 @@ export default function About() {
             <Banner />
             <div className='collapse-container'>
                 <Collapse buttonName='Fiabilité'
-                    text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ante non turpis tristique pharetra. Praesent imperdiet ipsum non mattis aliquet.' />
+                    text='Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformesux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.' />
                 <Collapse buttonName='Respect' 
                     text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ante non turpis tristique pharetra. Praesent imperdiet ipsum non mattis aliquet.' />
                 <Collapse buttonName='Service' 
