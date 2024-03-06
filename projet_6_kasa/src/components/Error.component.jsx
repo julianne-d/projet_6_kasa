@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header.component';
 import Footer from '../components/Footer.component';
 
@@ -9,10 +8,6 @@ export default function Error() {
     return (
         <>
             <div className='page'>
-                <Helmet>
-                    <title>404</title>
-                </Helmet>
-                
                 <Header />
                 <div className="error-404-container">
                     <h1 className="error-404-container__h1">404</h1>
