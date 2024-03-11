@@ -1,5 +1,6 @@
 $main-color: #ff6060;
 $collapse-background-color: #f6f6f6;
+$width-variable: 21rem;
 
 * {
   box-sizing: border-box;
@@ -19,10 +20,9 @@ body {
   margin:auto;
   max-width: 1300px;
   min-height: 80vh;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
