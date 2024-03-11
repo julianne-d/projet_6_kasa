@@ -3,19 +3,32 @@ $background-color: #f6f6f6;
 .cards-container {
     padding: 1rem;
 
-
-    @media (max-width: 500px) {
+    @media (max-width: 792px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         grid-gap: 1rem;
     }
 
-    @media (min-width: 501px) {
+    @media (min-width: 793px) {
         display: grid;
-        grid-template-columns: 32.5% 32.5% 32.5%; 
+        grid-template-columns: 49.5% 49.5%; 
         margin-top: 2rem;
         grid-gap: 1rem;
+        justify-items: center; 
+
+        background-color: $background-color;
+        border-radius: 1.5rem;
+        
+        padding: 2rem;
+    }
+
+    @media (min-width: 1084px) {
+        display: grid;
+        grid-template-columns: 33% 33% 33%; 
+        margin-top: 2rem;
+        grid-gap: 1rem;
+        justify-items: center; 
 
         background-color: $background-color;
         border-radius: 1.5rem;
