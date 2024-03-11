@@ -2,9 +2,16 @@
     display: flex;
     justify-content: space-between;
 
+    .slideshow__counter {
+        color: white;
+        font-weight: 500;
+        align-self: flex-end;
+        padding-bottom: 0.75rem
+    }
+
     @media (max-width: 500px) {
         height: 18rem;
-        width: 24rem;
+        width: 100%;
     }
       
     @media (min-width: 501px) {
